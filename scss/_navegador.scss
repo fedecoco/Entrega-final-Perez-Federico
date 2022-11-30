@@ -1,0 +1,68 @@
+
+/* Imagen Pibas Logo*/
+
+.h1 img { 
+    width: 250px;
+    height: 260px;
+}
+.h1{
+    background-color:white ;
+   @include display-comunes ;
+    max-width: 100%;
+    font-size: 1rem; 
+    margin-bottom: 0rem;
+    
+}
+/* Parrafo con imagen Pibas*/
+
+p {
+    background-color:white ;
+    text-align:center;
+    font-size: 25px;
+    position: relative;
+    top: 0px;
+    @include display-comunes;
+    margin-top: 0rem ; 
+    font-family: $tipo-letras;
+    font-style:$estilo-letra;
+    color: black;  
+    padding: 0px           
+}
+p img{
+    width: 100px;
+    max-width: 100% ;
+}
+ 
+/* Navegador con links*/
+
+.nav li{
+    display:inline ;    
+    margin-right:40        
+}
+
+.nav li:hover {
+    background-color: antiquewhite;       
+} 
+
+a{
+    @extend .cursor;
+    text-decoration:double ;
+    color: black;
+    height: 100px;
+    transition: height 2s;
+
+}
+ 
+.nav{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+
+    margin-top: 1rem ; 
+    background-color:rgb(218, 191, 156) ;
+    font-family: $tipo-letras;
+    font-style:$estilo-letra;
+    color: black;  
+    padding: 10px 
+}
+

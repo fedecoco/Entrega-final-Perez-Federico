@@ -1,0 +1,64 @@
+@import "variables";
+@import "navegador";
+@import "productos";
+@import "footer";
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;  
+    
+}
+img {max-width: 100%;}
+
+body {
+    background-color:rgb(245, 219, 177)
+    
+     
+}
+
+ 
+/* Crear Buscador*/
+.buscador {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+
+
+}
+
+/*Media quori*/
+
+@media screen and (max-width:1050px)
+{
+.productos .contenedor {
+    
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin: 0
+}
+ }
+
+
+@media screen and (max-width:750px) {
+    .productos .contenedor  {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 
+        grid-template-areas 
+    }
+
+     li { 
+        grid-template-columns: 1fr ;
+        
+        
+    }  
+       
+    
+}

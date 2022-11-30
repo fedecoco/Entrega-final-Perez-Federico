@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*Tamaño Imagenes */
+/* tipos de Letra */
+/* EXTEND*/
+.cursor, a, .productos .contenedor a {
+  cursor: pointer; }
+
+/*Mixins*/
+/* Imagen Pibas Logo*/
+.h1 img {
+  width: 250px;
+  height: 260px; }
+
+.h1 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  font-size: 1rem;
+  margin-bottom: 0rem; }
+
+/* Parrafo con imagen Pibas*/
+p {
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  color: black;
+  padding: 0px; }
+
+p img {
+  width: 100px;
+  max-width: 100%; }
+
+/* Navegador con links*/
+.nav li {
+  display: inline;
+  margin-right: 40; }
+
+.nav li:hover {
+  background-color: antiquewhite; }
+
+a {
+  text-decoration: double;
+  color: black;
+  height: 100px;
+  transition: height 2s; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+  background-color: #dabf9c;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  color: black;
+  padding: 10px; }
+
+/* Titulo Main de las cards */
+.productos h2 {
+  text-align: center;
+  padding: 20px;
+  background-color: #eed3ab;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  margin: 5px; }
+
+/* Buscador*/
+.buscador {
+  max-width: 100%;
+  text-align: center;
+  background-color: #eed3ab;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic; }
+
+/* imagenes del carrusel*/
+.carrusel {
+  width: auto;
+  height: auto;
+  max-height: 225px;
+  display: flex;
+  align-items: center;
+  padding: 5rem; }
+
+/* Cards*/
+.productos .contenedor div {
+  width: auto;
+  height: auto;
+  margin: 0 auto border top 1px solid #9f6e23;
+  border-right: 1px solid #a46911;
+  border-bottom: 1px solid #8b5b0d;
+  border-left: 1px solid #906b32;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #edd4b0; }
+
+.productos img {
+  width: 250px;
+  height: 260px; }
+
+.productos .contenedor h3 {
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  text-transform: uppercase; }
+
+.productos .contenedor a {
+  text-decoration: none;
+  color: #3f3629;
+  background-color: #c09a62;
+  padding: 10px; }
+
+.productos .contenedor {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f7deb8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 500px;
+  padding: 20px;
+  align-items: center;
+  justify-items: center; }
+
+/* FOOTER */
+.footer {
+  background-color: #c1ae96; }
+
+.li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 5px;
+  background-color: #dabf9c;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  color: black;
+  padding: 10px; }
+
+.linea {
+  height: 20px;
+  width: 1px;
+  background-color: black; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+body {
+  background-color: #f5dbb1; }
+
+/* Crear Buscador*/
+.buscador {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 20px; }
+
+/*Media quori*/
+@media screen and (max-width: 1050px) {
+  .productos .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin: 0; } }
+
+@media screen and (max-width: 750px) {
+  .productos .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: grid-template-areas; }
+  li {
+    grid-template-columns: 1fr; } }

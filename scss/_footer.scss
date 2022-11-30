@@ -1,0 +1,27 @@
+ /* FOOTER */ 
+
+ .footer  {
+    background-color: rgb(193, 174, 150);
+    
+    
+}  
+.li {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    list-style: none;
+
+    margin-top: 5px ; 
+    background-color:rgb(218, 191, 156) ;
+    font-family: $tipo-letras;
+    font-style:$estilo-letra;
+   
+    color: black;  
+    padding: 10px 
+
+} 
+.linea{
+    height:20px;
+    width: 1px;
+    background-color: black;
+}

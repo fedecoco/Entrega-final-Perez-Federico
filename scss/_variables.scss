@@ -1,0 +1,22 @@
+/*Tamaño Imagenes */
+$imagenes-alto:250px ;
+$imagenes-largo:260px ;
+
+/* tipos de Letra */
+
+$tipo-letras: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$estilo-letra:italic;
+
+/* EXTEND*/
+.cursor {
+    cursor:pointer;
+}
+
+
+/*Mixins*/
+
+@mixin display-comunes {
+    display: flex;
+    justify-content: center;
+    
+}
