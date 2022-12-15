@@ -17,7 +17,7 @@
 }
 /* Parrafo con imagen Pibas*/
 
-p {
+.p {
     max-width: 100% ;
     background-color:white;
     text-align:center;
@@ -29,13 +29,13 @@ p {
     font-family: $tipo-letras;
     font-style:$estilo-letra;
     color: black;  
-    padding: 0px           
-}
-p img{
+    padding: 0px  ;        
+
+ img {
     width: 100px;
     max-width: 100% ;
 }
- 
+}
 /* Navegador con links*/
 
 
