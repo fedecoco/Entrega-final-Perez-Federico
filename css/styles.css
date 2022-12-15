@@ -7,20 +7,21 @@
 
 /*Mixins*/
 /* Imagen Pibas Logo*/
-.h1 img {
-  width: 250px;
-  height: 260px; }
-
 .h1 {
   background-color: white;
   display: flex;
   justify-content: center;
   max-width: 100%;
   font-size: 1rem;
-  margin-bottom: 0rem; }
+  margin-bottom: 0rem;
+  padding: 0px; }
+  .h1 img {
+    width: 200px;
+    height: 210px; }
 
 /* Parrafo con imagen Pibas*/
 p {
+  max-width: 100%;
   background-color: white;
   text-align: center;
   font-size: 25px;
@@ -39,13 +40,6 @@ p img {
   max-width: 100%; }
 
 /* Navegador con links*/
-.nav li {
-  display: inline;
-  margin-right: 40; }
-
-.nav li:hover {
-  background-color: antiquewhite; }
-
 a {
   text-decoration: double;
   color: black;
@@ -53,87 +47,122 @@ a {
   transition: height 2s; }
 
 .nav {
+  margin-top: 20px;
+  max-width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 1rem;
-  background-color: #dabf9c;
+  background: #F9E0C8;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
-  color: black;
-  padding: 10px; }
+  font-size: 20px;
+  color: black; }
+  .nav .nav li:hover {
+    background-color: #F9E0C8; }
 
 /* Titulo Main de las cards */
 .productos h2 {
+  margin-top: 20px;
   text-align: center;
-  padding: 20px;
-  background-color: #eed3ab;
-  text-transform: uppercase;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-style: italic;
-  margin: 5px; }
-
-/* Buscador*/
-.buscador {
-  max-width: 100%;
-  text-align: center;
-  background-color: #eed3ab;
+  background-color: #f9eadd;
   text-transform: uppercase;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic; }
+  .productos h2 .iconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transform: translate(0, -40px);
+    margin-bottom: -90px; }
 
+/* Buscador*
+.buscar {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: E7CFBC;
+    
+    text-align: center;
+    background-color:#f6e8dc;
+    text-transform: uppercase;
+    font-family: $tipo-letras;
+    font-style:$estilo-letra;
+
+   
+   
+
+.item-buscador {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    margin: 10px;
+   
+    
+}
+
+}
+*/
 /* imagenes del carrusel*/
 .carrusel {
-  width: auto;
-  height: auto;
-  max-height: 225px;
   display: flex;
   align-items: center;
-  padding: 5rem; }
+  padding: 5 px; }
 
 /* Cards*/
 .productos .contenedor div {
   width: auto;
   height: auto;
-  margin: 0 auto border top 1px solid #9f6e23;
-  border-right: 1px solid #a46911;
-  border-bottom: 1px solid #8b5b0d;
-  border-left: 1px solid #906b32;
+  margin: auto;
+  border-top: 1px solid #9f6e23;
+  border-right: 0px solid #a46911;
+  border-bottom: 0px solid #8b5b0d;
+  border-left: 0px solid #906b32;
   text-align: center;
-  margin-bottom: 50px;
-  background-color: #edd4b0; }
+  margin-bottom: 20px;
+  background-color: #f8e9dc; }
 
 .productos img {
   width: 250px;
   height: 260px; }
 
 .productos .contenedor h3 {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   font-size: 30px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
-  text-transform: uppercase; }
+  text-decoration: blink;
+  color: #292928;
+  background-color: #eed8c4;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #F7D5B6, 0 2px 0 #F7D5B6, 0 3px 0 #F7D5B6, 0 4px 0 #F7D5B6, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9); }
 
 .productos .contenedor a {
   text-decoration: none;
-  color: #3f3629;
-  background-color: #c09a62;
-  padding: 10px; }
+  color: #1c1813;
+  background-color: #F7D5B6;
+  padding: 10px;
+  margin-top: 50px; }
 
 .productos .contenedor {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #f7deb8;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 500px;
-  padding: 20px;
-  align-items: center;
-  justify-items: center; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #f8e9dc; }
 
 /* FOOTER */
 .footer {
-  background-color: #c1ae96; }
+  background-color: #F5CBA3; }
 
 .li {
   display: flex;
@@ -141,7 +170,7 @@ a {
   justify-content: space-around;
   list-style: none;
   margin-top: 5px;
-  background-color: #dabf9c;
+  background-color: #F5CBA3;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   color: black;
@@ -152,37 +181,42 @@ a {
   width: 1px;
   background-color: black; }
 
+/*Media quori*/
+@media screen and (max-width: 1080px) {
+  .productos .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    width: 0 px;
+    margin: 0 px; } }
+
+@media screen and (max-width: 750px) {
+  .productos .contenedor {
+    display: grid;
+    justify-content: 1 fr;
+    justify-content: center;
+    align-items: center; }
+  li {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 375px) {
+  .productos h2 .iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none;
+    margin-bottom: 10px; } }
+
 * {
-  margin: 0;
-  padding: 0; }
+  margin: 0 px;
+  padding: 0 px; }
 
 img {
   max-width: 100%; }
 
 body {
-  background-color: #f5dbb1; }
+  background-color: #f8e9dc; }
 
 /* Crear Buscador*/
-.buscador {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-left: 20px; }
-
-/*Media quori*/
-@media screen and (max-width: 1050px) {
-  .productos .contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px 500px;
-    padding: 20px;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    margin: 0; } }
-
-@media screen and (max-width: 750px) {
-  .productos .contenedor {
-    grid-template-columns: 1fr;
-    grid-template-rows: grid-template-areas; }
-  li {
-    grid-template-columns: 1fr; } }
